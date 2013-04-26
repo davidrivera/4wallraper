@@ -1,5 +1,3 @@
-# This example logs a user in to rubyforge and prints out the body of the
-# page after logging the user in.
 require 'rubygems'
 require 'mechanize'
 require 'logger'
@@ -14,10 +12,10 @@ LAST_IMAGE    = ""
 IMAGE_LINKS   = false 
 RANDOM_IMAGE  = ""
 COUNT         = 0
+
 while true do
 if IMAGE_LINKS == false
   IMAGE_LINKS = []
-  # Create a new mechanize object
   mech = Mechanize.new
   
   page = mech.get("http://4walled.cc/search.php?tags=#{TAGS}&board=#{BOARD}&width_aspect=#{RES}&searchstyle=#{SEARCH_STYLE}&sfw=#{SFW}&search=random")
