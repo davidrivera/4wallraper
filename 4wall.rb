@@ -1,3 +1,11 @@
+#
+# 4wallraper
+# wallpapers from the internet!
+#
+# By David Rivera
+# http://www.protodx.com
+#
+
 require 'rubygems'
 require 'mechanize'
 require 'logger'
